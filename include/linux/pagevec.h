@@ -17,7 +17,7 @@ struct address_space;
 
 struct pagevec {
 	unsigned char nr;
-	bool percpu_pvec_drained;
+	unsigned long cold;
 	struct page *pages[PAGEVEC_SIZE];
 };
 
